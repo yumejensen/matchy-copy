@@ -6,24 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Mocha Spec Runner</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.3/mocha.min.css">
+  <style>
+    body {
+        padding: 10px;
+    }
+  </style>
 </head>
 
-<body>
-  <div id="mocha"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.5.3/mocha.min.js"></script>
-  <script>mocha.setup('');</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.1.2/chai.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.4.0/lodash.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/4.0.0/sinon.min.js"></script>
-  <script>
-    var assert = chai.assert;
-    var expect = chai.expect;
-    var should = chai.should();
-  </script>
-  <script src="data.js"></script>
-  <script src="functions.js"></script>
-  <script src="spec/index.spec.js"></script>
-  <script>mocha.run();</script>
-</body>
+<body class="bg-secondary">
+    <div class="container">
+      <div class="jumbotron bg-dark">
+        <h1 class="text-warning">Matchy</h1>
+      </div>
+      <ul>
+        <li>
+          <a class="text-warning" href="tests.html">Tests</a>
+        </li>
+        <li>
+          <a class="text-warning" href="matchy.html">Web page</a>
+        </li>
+      </ul>
+    </div>
+  </body>
 
 </html>
