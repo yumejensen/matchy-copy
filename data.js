@@ -12,6 +12,16 @@
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+//empty object called animal
+var animal = {};
+// dot notation, add species dog
+animal.species = 'dog';
+// bracket notation, add name your animal's name
+animal['name'] = 'Maruko';
+// give animal noises empty array
+animal['noises'] = [];
+//print animal to console
+console.log(animal);
 
 
 
