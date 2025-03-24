@@ -113,6 +113,18 @@ console.log(animals); // now dog, duck, frog, horse are in array
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+// choose a data structure to hold list of friends
+// Array, because arrays can hold our friend objects. Arrays are also simpler to access/ loop through/ manipulate than objects
+
+var friends = [];
+
+/* Math.random()
+this is a static method that returns a floating point between 0 and 1 
+takes no parameters
+console.log(Math.random()); => random number like 0.1021 prints to console
+*/
+
+// write a function called getRandom that takes animals array and returns a random index using Math.random()
 
 
 /**
