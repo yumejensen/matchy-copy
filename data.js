@@ -82,9 +82,30 @@ console.log(animal);
  * *******************************************************************
  */
 
+
 //////////////////////////////////////////////////////////////////////
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+//make variable animals assigned to empty array
+var animals = [];
+// push our animal into animals
+animals.push(animal);
+console.log(animals); // dog object added to array
+
+//create variable duck and assign it to data provided
+var duck = { species: 'duck', name: 'Jerome', noises: ['quack', 'honk', 'sneeze', 'woosh'] };
+animals.push(duck); 
+console.log(animals); // now dog and duck are in array
+
+//make 2 more animal object and add it to animals
+var frog = { species: 'frog', name: 'Keroro', noises: ['ribbit', 'squish']};
+animals.push(frog);
+
+var horse = { species: 'horse', name: 'Fabio', noises: ['neigh', 'whinny']};
+animals.push(horse);
+
+console.log(animals); // now dog, duck, frog, horse are in array
 
 
 
