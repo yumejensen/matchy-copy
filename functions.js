@@ -48,6 +48,7 @@ function replace (arrayOfAnimals, nameOfAnimal, replacementAnimal){
     for (i = 0; i < arrayOfAnimals.length; i++){
         if (arrayOfAnimals[i]['name'] === nameOfAnimal){
             // splice method to delete and replace
+            arrayOfAnimals.splice(arrayOfAnimals[i], 1, replacementAnimal);
         }
     }
 }
