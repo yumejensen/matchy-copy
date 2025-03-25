@@ -91,7 +91,12 @@ Write a function declaration called `add` with a signature of `add(animals, anim
 function add (arrayOfAnimals, newAnimal){
     // checks if newAnimal has a name property with length > 0
     // checks if newAnimal has species property with length > 0
-    // checks if newAnimal has a unique name
+    // checks if newAnimal has a unique name - for loop
+    for (i = 0; i < arrayOfAnimals.length; i++){
+        if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && newAnimal['name'] !== arrayOfAnimals[i]['name']){
+            arrayOfAnimals.push(newAnimal);
+        }
+    }
 
     // if all these conditions pass add newAnimal to animals array
 }
