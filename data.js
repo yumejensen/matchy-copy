@@ -126,8 +126,7 @@ console.log(Math.random()); => random number like 0.1021 prints to console
 
 // write a function called getRandom that takes animals array and returns a random index using Math.random()
 function getRandom(index){
-  // Math.random() multiplied by length of array
-  // Math.floor() to round down to nearest integer
+  // Math. floor to round downt to nearest integer - then (Math.random() * length of array)
   return Math.floor(Math.random() * index.length);
 
 }
