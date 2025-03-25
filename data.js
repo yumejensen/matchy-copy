@@ -128,15 +128,16 @@ console.log(Math.random()); => random number like 0.1021 prints to console
 function getRandom(index){
   // Math. floor to round downt to nearest integer - then (Math.random() * length of array)
   return Math.floor(Math.random() * index.length);
-
 }
-
+//console.log(getRandom(animals)); // works!
 
 // Using a random index from this function, get a random animal and add its `name` to `friends`
+friends.push(animals[getRandom(animals)].name);
+console.log(friends);
 
-
-
-
+// Using **bracket notation**, add the `friends` list as a **property** also named `friends` on one of the animals in the `animals` array
+animals[0]['friends'] = friends;
+console.log(animals);
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
