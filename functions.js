@@ -28,7 +28,7 @@ function search (arrayOfAnimals, nameOfAnimal){
             return arrayOfAnimals[i];
         } 
     }
-    return null;
+    return null; // this returns after everything in the loop was checked and nothing matches
 }
 
 
@@ -58,6 +58,22 @@ function replace (arrayOfAnimals, nameOfAnimal, replacementAnimal){
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+/*
+Write a function declaration called `remove` with a signature of `remove(animals, name)` that:
+   - Takes 2 parameters, an Array of animals, and a name of an animal on which to perform a search.
+   - If an animal with that name exists within the `animals` Array, remove it.
+*/
+function remove (arrayOfAnimals, nameOfAnimal){
+    //for loop to go over array of animals
+    // if statement to say, if that animal is there, delete it
+    for (i = 0; i < arrayOfAnimals.length; i++){
+        if (arrayOfAnimals[i]['name'] === nameOfAnimal){
+            // splice method to delete that animal
+            arrayOfAnimals.splice(arrayOfAnimals[i], 1);
+        }
+    }
+}
+
 
 
 
