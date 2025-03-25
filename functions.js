@@ -88,18 +88,22 @@ Write a function declaration called `add` with a signature of `add(animals, anim
    - Adds this new Object to the `animals` Array, **only** if all the other conditions pass.
 */
 
-function add (arrayOfAnimals, newAnimal){
-    // checks if newAnimal has a name property with length > 0
-    // checks if newAnimal has species property with length > 0
-    // checks if newAnimal has a unique name - for loop
-    for (i = 0; i < arrayOfAnimals.length; i++){
-        if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && newAnimal['name'] !== arrayOfAnimals[i]['name']){
-            arrayOfAnimals.push(newAnimal);
-        }
+// make a function that checks for unique name
+function uniqueName (newAnimal){
+    if (newAnimal['name'] !== arrayOfAnimals[i]['name']){
+      return true;
     }
-
-    // if all these conditions pass add newAnimal to animals array
-}
+  }
+  
+  // insert that function into if statement
+  function add (arrayOfAnimals, newAnimal){
+      // checks if newAnimal has a name property with length > 0
+      // checks if newAnimal has species property with length > 0
+      // checks if newAnimal has a unique name - for loop
+    if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && uniqueName(newAnimal) === 'true'){
+      arrayOfAnimals.push(newAnimal);
+    }
+  } // end of function
 
 
 
