@@ -26,6 +26,9 @@ function search (arrayOfAnimals, nameOfAnimal){
     for (i = 0; i < arrayOfAnimals.length; i++){
         if (arrayOfAnimals[i]['name'] === nameOfAnimal){
             return arrayOfAnimals[i];
+            // if object with name does not exist, return null
+        } else {
+            return null;
         }
     }
 }
