@@ -88,7 +88,13 @@ Write a function declaration called `add` with a signature of `add(animals, anim
    - Adds this new Object to the `animals` Array, **only** if all the other conditions pass.
 */
 
-function add (arrayOfAnimals, )
+function add (arrayOfAnimals, newAnimal){
+    // checks if newAnimal has a name property with length > 0
+    // checks if newAnimal has species property with length > 0
+    // checks if newAnimal has a unique name
+
+    // if all these conditions pass add newAnimal to animals array
+}
 
 
 
