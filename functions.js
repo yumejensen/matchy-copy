@@ -43,13 +43,13 @@ Write a function declaration called `replace` with a signature of `replace(anima
    - Otherwise do nothing.
 */
 
-function replace (arrayOfAnimals, nameOfAnimal, replacementAnimal){
+function replace (arrayOfAnimals, nameOfAnimal, newAnimal){
     // if nameOfAnimal exists inside arrayOfAnimals, replace that animal with replacementAnimal
     // for loop to go over array, if statement to replace
     for (i = 0; i < arrayOfAnimals.length; i++){
         if (arrayOfAnimals[i]['name'] === nameOfAnimal){
             // splice method to delete and replace
-            arrayOfAnimals.splice(arrayOfAnimals[i], 1, replacementAnimal);
+            arrayOfAnimals.splice(arrayOfAnimals[i], 1, newAnimal);
         }
     }
 }
@@ -76,10 +76,20 @@ function remove (arrayOfAnimals, nameOfAnimal){
 
 
 
-
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+/*
+Write a function declaration called `add` with a signature of `add(animals, animal) { //... }` that:
+   - Takes 2 parameter, an Array of animals, and an Object representing a new animal to be added.
+   - Checks that the animal Object has a `name` property with a length > 0.
+   - Checks that the animal Object has a `species` property with a length > 0.
+   - Has a **unique** name, meaning no other animals have that name.
+   - Adds this new Object to the `animals` Array, **only** if all the other conditions pass.
+*/
+
+function add (arrayOfAnimals, )
+
 
 
 
