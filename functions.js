@@ -88,7 +88,7 @@ Write a function declaration called `add` with a signature of `add(animals, anim
 */
 
 // make a function that searches for the same name and returns an array if there is a duplicate
-var anyMatches = function (arrayOfAnimals) {
+var anyMatches = function (arrayOfAnimals, newAnimal) {
     // holder array for duplicates
     var duplicates = [];
     // for loop to go over array
@@ -108,7 +108,7 @@ function add (arrayOfAnimals, newAnimal){
     if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && anyMatches.length === 0){
       arrayOfAnimals.push(newAnimal);
     }
-    
+
 } // end of function
 
 
