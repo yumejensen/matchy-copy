@@ -75,7 +75,6 @@ function remove (arrayOfAnimals, nameOfAnimal){
 }
 
 
-
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
@@ -89,27 +88,27 @@ Write a function declaration called `add` with a signature of `add(animals, anim
 */
 
 // make a function that searches for the same name and returns an array if there is a duplicate
-var anyMatches = function (newAnimal) {
-    // for loop
+var anyMatches = function (arrayOfAnimals) {
+    // holder array for duplicates
     var duplicates = [];
+    // for loop to go over array
     for (var i = 0; i < arrayOfAnimals.length; i++){
       if (newAnimal['name'] === arrayOfAnimals[i]['name']){
         duplicates.push(newAnimal);
       }
     } 
     return duplicates;
-}
+    }
   
   // insert that function into if statement
-  function add (arrayOfAnimals, newAnimal){
+function add (arrayOfAnimals, newAnimal){
       // checks if newAnimal has a name property with length > 0
       // checks if newAnimal has species property with length > 0
       // checks if newAnimal has a unique name - for loop
     if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && anyMatches.length === 0){
       arrayOfAnimals.push(newAnimal);
     }
-  } // end of function
-  
+} // end of function
 
 
 
