@@ -87,25 +87,13 @@ Write a function declaration called `add` with a signature of `add(animals, anim
    - Adds this new Object to the `animals` Array, **only** if all the other conditions pass.
 */
 
-// make a function that searches for the same name and returns an array if there is a duplicate
-var anyMatches = function (arrayOfAnimals, newAnimal) {
-    // holder array for duplicates
-    var duplicates = [];
-    // for loop to go over array
-    for (var i = 0; i < arrayOfAnimals.length; i++){
-      if (newAnimal['name'] === arrayOfAnimals[i]['name']){
-        duplicates.push(newAnimal);
-      }
-    } 
-    return duplicates;
-    }
-  
+
   // insert that function into if statement
 function add (arrayOfAnimals, newAnimal){
       // checks if newAnimal has a name property with length > 0
       // checks if newAnimal has species property with length > 0
       // checks if newAnimal has a unique name - for loop
-    if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && anyMatches.length === 0){
+    if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && search(arrayOfAnimals, newAnimal.name) === null){
       arrayOfAnimals.push(newAnimal);
     }
 
