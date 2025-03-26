@@ -96,7 +96,6 @@ function add (arrayOfAnimals, newAnimal){
     if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && search(arrayOfAnimals, newAnimal.name) === null){
       arrayOfAnimals.push(newAnimal);
     }
-
 } // end of function
 
 
