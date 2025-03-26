@@ -108,6 +108,7 @@ function add (arrayOfAnimals, newAnimal){
     if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && anyMatches.length === 0){
       arrayOfAnimals.push(newAnimal);
     }
+    
 } // end of function
 
 
