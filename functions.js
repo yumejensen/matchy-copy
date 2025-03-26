@@ -88,7 +88,7 @@ Write a function declaration called `add` with a signature of `add(animals, anim
    - Adds this new Object to the `animals` Array, **only** if all the other conditions pass.
 */
 
-// make a function that checks for unique name
+// make a function that searches for the same name and returns an array if there is a duplicate
 var anyMatches = function (newAnimal) {
     // for loop
     var duplicates = [];
@@ -98,7 +98,7 @@ var anyMatches = function (newAnimal) {
       }
     } 
     return duplicates;
-    }
+}
   
   // insert that function into if statement
   function add (arrayOfAnimals, newAnimal){
