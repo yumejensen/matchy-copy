@@ -89,28 +89,23 @@ Write a function declaration called `add` with a signature of `add(animals, anim
 */
 
 // make a function that checks for unique name
-function uniqueName (newAnimal){
+var anyMatches = function (newAnimal) {
     // for loop
-    var anyMatches = [];
+    var duplicates = [];
     for (var i = 0; i < arrayOfAnimals.length; i++){
       if (newAnimal['name'] === arrayOfAnimals[i]['name']){
-        anyMatches.push(newAnimal);
+        duplicates.push(newAnimal);
       }
     } 
-    
-    if (anyMatches.length === 0){
-      return false;
-    } else {
-      return true;
+    return duplicates;
     }
-  }
   
   // insert that function into if statement
   function add (arrayOfAnimals, newAnimal){
       // checks if newAnimal has a name property with length > 0
       // checks if newAnimal has species property with length > 0
       // checks if newAnimal has a unique name - for loop
-    if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && uniqueName(newAnimal) === 'false'){
+    if (newAnimal['name'].length > 0 && newAnimal['species'].length > 0 && anyMatches.length === 0){
       arrayOfAnimals.push(newAnimal);
     }
   } // end of function
